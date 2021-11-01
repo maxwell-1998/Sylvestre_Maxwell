@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>My name is Maxwell Sylvestre and My favorite Hobby is  playing soccer with my Friends</title>
+<script type="text/javascript"> 
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date() 
+var x1 = x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+document.getElementById('ct').innerHTML = x1;
+display_c();
+ }
+</script>
+</head>
+
+<body onload=display_ct();>
+
+<h1>My name is Maxwell Sylvestre and my favorite hobby is playing Soccer with my friend.</h1>
+<p> The current time is : <span id='ct' ></span></p>
+
+</body>
+</html>
